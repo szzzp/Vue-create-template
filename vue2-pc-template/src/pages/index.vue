@@ -2,7 +2,10 @@
   <div id="home">
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
-    <router-link to="/login">点击登录</router-link>
+
+    <router-link to="/login">
+      <el-button type="info">点击登录</el-button>
+    </router-link>
   </div>
 </template>
 <script>

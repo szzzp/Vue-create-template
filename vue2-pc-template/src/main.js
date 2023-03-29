@@ -4,6 +4,7 @@ import App from "./App.vue";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import locale from "element-ui/lib/locale/lang/zh-CN";
+import "./style/index.css";
 
 Vue.config.productionTip = false;
 import router from "./router";
