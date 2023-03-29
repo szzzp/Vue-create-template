@@ -4,7 +4,7 @@ import store from "@/store";
 import { getToken } from "@/utils/auth";
 
 const service = axios.create({
-  baseURL: "/api", // 可代理配置地址
+  baseURL: process.env.VUE_APP_BASE_API, // 可代理配置地址
   timeout: 5000, //
 });
 
