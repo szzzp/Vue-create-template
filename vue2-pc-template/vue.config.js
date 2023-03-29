@@ -1,3 +1,4 @@
+const port = process.env.port || process.env.npm_config_port || 9528;
 module.exports = {
   // 配置图片压缩
   module: {
