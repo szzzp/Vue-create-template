@@ -6,17 +6,26 @@
     <router-link to="/login">
       <el-button type="info">点击登录</el-button>
     </router-link>
+    <!-- {{ token }} -->
   </div>
 </template>
 <script>
+import { mapGetters } from "vuex";
 import HelloWorld from "../components/HelloWorld.vue";
 export default {
-  name: "",
+  name: "Login",
   components: {
     HelloWorld,
   },
   data() {
     return {};
+  },
+  created() {},
+  mounted() {},
+  computed: {},
+  methods: {},
+  computed: {
+    ...mapGetters("login", ["token"]),
   },
 };
 </script>

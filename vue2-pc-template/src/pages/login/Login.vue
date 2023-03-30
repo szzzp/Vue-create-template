@@ -5,20 +5,21 @@
   </div>
 </template>
 <script>
-import { mapActions } from "vuex";
+import { mapMutations } from "vuex";
 export default {
   name: "",
   data() {
     return {};
   },
   methods: {
-    ...mapActions("user", ["login"]),
+    ...mapMutations(["login/getLogin"]),
     login() {
-      // 调用store的action异步发送请求
-      //   this.login();
+      // 调用store的login异步发送请求
+      // this["login/getLogin"]();
+
       // 提示信息
       this.$message({
-        message: "你很有眼光!",
+        message: "有品!",
         type: "",
       });
     },
